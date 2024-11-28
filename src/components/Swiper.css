@@ -41,6 +41,12 @@
     color: #555;
 }
 
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* Estilo para la paginación */
 .swiper-pagination-bullet {
     background-color: #007bff;

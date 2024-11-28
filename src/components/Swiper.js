@@ -1,4 +1,4 @@
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay} from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay} from 'swiper/modules';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -14,7 +14,7 @@ import './Swiper.css';
 export default ({slides}) => {
     return (
         <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            modules={[Navigation, Pagination, A11y, Autoplay]}
             spaceBetween={50}
             slidesPerView={4}
             centeredSlides={true}
@@ -26,16 +26,16 @@ export default ({slides}) => {
             loop
             navigation
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
         >
             {slides.map((menu) =>(
                 <SwiperSlide>
                     <div className="slide">
+                        <img src={menu.image} alt={menu.title} />
                         <h3>{menu.title}</h3>
                         <p>{menu.description}</p>
+                        <p>{menu.price}</p>
                     </div>
                 </SwiperSlide>
             ))}
