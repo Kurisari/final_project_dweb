@@ -8,7 +8,7 @@
 }
 
 .home-content h1 {
-    background-image: url('../assets/backgroundHome.png');
+    background-image: url('../assets/img/backgroundHome.png');
     /* Cambia la ruta a tu imagen */
     background-size: cover;
     background-position: center;
