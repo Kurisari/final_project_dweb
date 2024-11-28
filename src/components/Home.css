@@ -1,11 +1,23 @@
 .home-content {
     text-align: center;
-    padding: 100px 20px;
+    padding: 20px 20px;
+    background-color: #f8f9fa;
+    /* Fondo general */
+    min-height: 100vh;
+    /* Ocupa toda la pantalla */
 }
 
 .home-content h1 {
-    color: #d32f2f;
+    background-image: url('../assets/backgroundHome.png');
+    /* Cambia la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    /* Texto en blanco para contraste */
+    padding: 50px 0;
     font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Efecto de sombra */
 }
 
 .home-content p {
@@ -22,4 +34,19 @@
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 20px;
+}
+
+/* Estilos del carrusel */
+.swiper {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.slide {
+    background-color: #d32f2f;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
 }
