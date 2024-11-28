@@ -1,10 +1,14 @@
 import React from 'react';
 import './Header.css';
+import logo from '../assets/logo.png';
 
 const Header = () => {
     return (
         <header className="header">
-            <h1>Mi Empresa</h1>
+            <div className="logo-container">
+            <img src={logo} alt="Logo de Pollos 'El Güero'" className="logo" />
+            <h1>Pollos "El Güero"</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="/">Inicio</a></li>

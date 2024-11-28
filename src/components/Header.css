@@ -1,11 +1,23 @@
 .header {
-    background-color: #ff5733;
-    /* Color similar */
+    background-color: #d32f2f;
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
     align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    margin-right: 15px;
+    /* Espacio entre el logo y el texto */
 }
 
 .header ul {
