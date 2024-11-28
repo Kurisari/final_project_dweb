@@ -1,0 +1,32 @@
+[
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Title 1",
+        "description": "Description 1",
+        "price": 10
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Title 2",
+        "description": "Description 2",
+        "price": 20
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Title 3",
+        "description": "Description 3",
+        "price": 30
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Title 4",
+        "description": "Description 4",
+        "price": 40
+    },
+    {
+        "image": "https://via.placeholder.com/150",
+        "title": "Title 5",
+        "description": "Description 5",
+        "price": 50
+    }
+]
