@@ -1,0 +1,53 @@
+/* Estilo general del Swiper */
+.swiper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+/* Estilo individual de los slides */
+.swiper-slide {
+    background-color: #f8f8f8;
+    /* Color de fondo */
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    overflow: visible;
+}
+
+.slide {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: #555;
+}
+
+/* Contenido del slide */
+.slide h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.slide p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilo para la paginación */
+.swiper-pagination-bullet {
+    background-color: #007bff;
+    /* Color de los bullets */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ff4500;
+    /* Color del bullet activo */
+}

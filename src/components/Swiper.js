@@ -9,12 +9,15 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import "swiper/css/autoplay";
 
+import './Swiper.css';
+
 export default ({slides}) => {
     return (
         <Swiper
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
-            slidesPerView={3}
+            slidesPerView={4}
+            centeredSlides={true}
             autoplay={{
                 delay: 3000,
                 pauseOnMouseEnter: true,
