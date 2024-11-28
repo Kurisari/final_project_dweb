@@ -1,6 +1,7 @@
 .home-content {
     text-align: center;
     padding: 20px 20px;
+    padding-bottom: 0px;
     background-color: #f8f9fa;
     /* Fondo general */
     min-height: 100vh;
@@ -34,19 +35,4 @@
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 20px;
-}
-
-/* Estilos del carrusel */
-.swiper {
-    width: 80%;
-    margin: 20px auto;
-}
-
-.slide {
-    background-color: #d32f2f;
-    color: white;
-    padding: 50px;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    text-align: center;
 }
