@@ -4,7 +4,7 @@ import 'swiper/css';
 import Swiper from './Swiper';
 import menu from '../assets/data/menu.json';
 
-const Home = () => {
+const Home = ({ addToCart }) => {
     return (
         <div className="home-content">
             <header>
@@ -14,7 +14,7 @@ const Home = () => {
                     <button className="btn-primary">Explorar</button>
                 </div>
             </header>
-            <Swiper slides={menu} />
+            <Swiper slides={menu} addToCart={addToCart}/>
         </div>
     );
 };

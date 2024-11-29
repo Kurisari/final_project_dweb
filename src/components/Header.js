@@ -1,11 +1,9 @@
 import React from 'react';
 import './Header.css';
 import logo from '../assets/img/logo.png';
-import { useState } from 'react';
 import cart from '../assets/img/cart.png'
 
-const Header = () => {
-    const [cartItems, setCartItems] = useState(0);
+const Header = ({ cartItems }) => {
     return (
         <header className="header">
             <div className="logo-container">
