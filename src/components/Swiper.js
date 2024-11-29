@@ -32,7 +32,7 @@ export default ({slides}) => {
             {slides.map((menu) =>(
                 <SwiperSlide>
                     <div className="slide">
-                        <img src={menu.image} alt={menu.title} />
+                        <img src={require(`../assets/${menu.image}`)} alt={menu.title} />
                         <h3>{menu.title}</h3>
                         <p>{menu.description}</p>
                         <p>{menu.price}</p>
