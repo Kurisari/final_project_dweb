@@ -11,7 +11,11 @@ import "swiper/css/autoplay";
 
 import './Swiper.css';
 
-export default ({slides}) => {
+const SwiperComponent = ({ slides }) => {
+    const addToCart = (menu) => {
+        alert(`Added ${menu.title} to cart`);
+        // Aquí puedes agregar la lógica para añadir el elemento al carrito
+    };
     return (
         <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -26,8 +30,6 @@ export default ({slides}) => {
             loop
             navigation
             pagination={{ clickable: true }}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
         >
             {slides.map((menu) =>(
                 <SwiperSlide>
@@ -36,9 +38,12 @@ export default ({slides}) => {
                         <h3>{menu.title}</h3>
                         <p>{menu.description}</p>
                         <p>{menu.price}</p>
+                        <button onClick={() => addToCart(menu)} className='add-cart'>Add to Cart</button>
                     </div>
                 </SwiperSlide>
             ))}
         </Swiper>
     );
 };
+
+export default SwiperComponent;
