@@ -1,32 +1,32 @@
 [
     {
-        "image": "https://via.placeholder.com/150",
-        "title": "Title 1",
-        "description": "Description 1",
-        "price": "$10.00"
+        "image": "img/menu/pollo-frito-crujiente.jpg",
+        "title": "Pollo Frito",
+        "description": "Crujientes y deliciosas piezas de pollo frito",
+        "price": "$150.00"
     },
     {
-        "image": "https://via.placeholder.com/150",
-        "title": "Title 2",
-        "description": "Description 2",
-        "price": "$20.00"
+        "image": "img/menu/alitas.jpg",
+        "title": "Alitas",
+        "description": "Alitas de pollo bañadas en la salsa de tu elección",
+        "price": "$120.00"
     },
     {
-        "image": "https://via.placeholder.com/150",
-        "title": "Title 3",
-        "description": "Description 3",
-        "price": "$30.00"
-    },
-    {
-        "image": "https://via.placeholder.com/150",
-        "title": "Title 4",
-        "description": "Description 4",
-        "price": "$40.00"
-    },
-    {
-        "image": "https://via.placeholder.com/150",
-        "title": "Title 5",
-        "description": "Description 5",
+        "image": "img/menu/papas.webp",
+        "title": "Papas Fritas",
+        "description": "Papas fritas con nuestra salsa especial",
         "price": "$50.00"
+    },
+    {
+        "image": "img/menu/hamburguesa.avif",
+        "title": "Hamburguesa de pollo",
+        "description": "Hamburguesa de pollo con lechuga, tomate y queso",
+        "price": "$140.00"
+    },
+    {
+        "image": "img/menu/refrescos.jpg",
+        "title": "Refresco",
+        "description": "Refresco de 600ml",
+        "price": "$20.00"
     }
 ]
