@@ -28,5 +28,11 @@
         "title": "Refresco",
         "description": "Refresco de 600ml",
         "price": "$20.00"
+    },
+    {
+        "image": "img/menu/aderezos.jpeg",
+        "title": "Aderezo",
+        "description": "Aderezo de la casa",
+        "price": "$10.00"
     }
 ]
