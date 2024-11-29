@@ -57,3 +57,9 @@
     background-color: #ff4500;
     /* Color del bullet activo */
 }
+
+/* Estilo para las flechas de navegación */
+.swiper-button-next, .swiper-button-prev {
+    color: #ff4500;
+    /* Color de las flechas */
+}
