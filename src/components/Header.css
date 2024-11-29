@@ -36,3 +36,43 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+.header .links-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.links-container nav ul li a:hover {
+    color: #ffcc00;
+}
+
+.cart-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-count {
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #d32f2f;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
