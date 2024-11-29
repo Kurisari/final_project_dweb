@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/img/logo.png';
 import cart from '../assets/img/cart.png'
@@ -13,15 +14,15 @@ const Header = ({ cartItems }) => {
             <div className="links-container">
                 <nav>
                     <ul>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="/servicios">Servicios</a></li>
-                        <li><a href="/contacto">Contacto</a></li>
+                        <li><Link to="/">Inicio</Link></li>
+                        <li><Link to="/acerca-de">Acerca de</Link></li>
+                        <li><Link to="/categorias">Categorías</Link></li>
                     </ul>
                 </nav>
-                <a href="/carrito" className="cart-link">
+                <Link to="/carrito" className="cart-link">
                     <img src={cart} alt="Carrito" className="cart-icon" />
                     <span className="cart-count">{cartItems}</span>
-                </a>
+                </Link>
             </div>
         </header>
     );
