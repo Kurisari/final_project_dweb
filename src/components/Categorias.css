@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box; 
+}
+
 .categorias {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
@@ -62,15 +66,15 @@
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 20px; 
+  grid-template-columns: repeat(4, minmax(250px, 1fr));  
+  gap: 20px;
   padding: 20px;
-  justify-items: center;
+  justify-content: center; 
 }
 
 .product-card {
   width: 100%;
-  max-width: 370px; 
+  max-width: 400px;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
@@ -79,8 +83,9 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
 }
+
 
 .product-card:hover {
   transform: translateY(-5px);
