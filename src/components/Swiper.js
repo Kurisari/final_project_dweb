@@ -31,7 +31,7 @@ const SwiperComponent = ({ slides, addToCart }) => {
                 <SwiperSlide>
                     <div className="slide">
                         <img src={require(`../assets/${menu.image}`)} alt={menu.title} />
-                        <h3>{menu.title}</h3>
+                        <h3>{menu.name}</h3>
                         <p>{menu.description}</p>
                         <p>{menu.price}</p>
                         <button onClick={addToCart} className='add-cart'>Add to Cart</button>
