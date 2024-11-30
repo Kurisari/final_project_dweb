@@ -1,0 +1,55 @@
+.empleados-container {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.empleado-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.empleado-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(249, 0, 0, 0.3);
+}
+
+.empleado-foto {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.empleado-nombre {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.empleado-puesto {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.empleado-email {
+    font-size: 1em;
+    color: #b32217;
+    text-decoration: none;
+}
+
+.empleado-email:hover {
+    text-decoration: underline;
+}
