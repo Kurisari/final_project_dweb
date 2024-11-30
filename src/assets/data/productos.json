@@ -1,11 +1,11 @@
 [
     {
-       "id": 1,
-       "name": "Pollo frito",
-       "description": "5 crujientes y deliciosas piezas de pollo frito.",
-       "category": "pollo",
-       "image": "https://example.com/images/pollo_frito.jpg",
-       "price": "$150.00"
+        "id": 1,
+        "name": "Pollo frito",
+        "description": "5 crujientes y deliciosas piezas de pollo frito.",
+        "category": "pollo",
+        "image": "https://example.com/images/pollo_frito.jpg",
+        "price": "$150.00"
     },
     {
         "id": 2,
