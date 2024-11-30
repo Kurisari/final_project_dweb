@@ -15,7 +15,17 @@ function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     const addToCart = (product) => {
-        setCartItems([...cartItems, product]);
+        // Verificar si el producto ya está en el carrito
+        const existingProduct = cartItems.find(item => item.id === product.id);
+        if (existingProduct) {
+            // Si el producto ya está en el carrito, solo actualizamos la cantidad
+            setCartItems(cartItems.map(item =>
+                item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+            ));
+        } else {
+            // Si el producto no está en el carrito, lo agregamos con cantidad 1
+            setCartItems([...cartItems, { ...product, quantity: 1 }]);
+        }
     };
 
     return (
