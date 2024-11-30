@@ -5,6 +5,7 @@ import Home from './components/Home';
 import AcercaDe from './components/AcercaDe';
 import Categorias from './components/Categorias';
 import Carrito from './components/Carrito';
+import Checkout from './components/Checkout';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
@@ -15,7 +16,6 @@ function App() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
     const addToCart = (product) => {
-        // Verificar si el producto ya está en el carrito
         const productExists = cartItems.find(item => item.id === product.id);
         if (productExists) {
             setCartItems(cartItems.map(item =>
