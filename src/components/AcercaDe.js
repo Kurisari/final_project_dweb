@@ -1,4 +1,7 @@
 import React from 'react';
+import ListaEmpleados from './ListaEmpleados';
+
+import empleados from '../assets/data/empleados.json';
 import './AcercaDe.css'; 
 
 const AcercaDe = () => {
@@ -26,6 +29,10 @@ const AcercaDe = () => {
                     <li><strong>Tradición:</strong> Recetas familiares auténticas.</li>
                     <li><strong>Innovación:</strong> Adaptándonos a tus necesidades.</li>
                 </ul>
+            </div>
+            <div className='acerca-de-seccion'>
+                <h3>Nuestro Equipo</h3>
+                <ListaEmpleados empleados={empleados} />
             </div>
         </div>
     );
