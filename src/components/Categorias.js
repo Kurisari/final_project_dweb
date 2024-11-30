@@ -48,7 +48,7 @@ const Categorias = ({ addToCart }) => {
             />
             <div className="product-header">
               <h3>{product.name}</h3>
-              <p className="product-price">{product.price}</p>
+              <p className="product-price">${product.price}</p>
             </div>
             <p className="product-description">{product.description}</p>
             <button
