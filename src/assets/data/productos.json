@@ -4,7 +4,7 @@
         "name": "Pollo frito",
         "description": "5 crujientes y deliciosas piezas de pollo frito.",
         "category": "pollo",
-        "image": "https://example.com/images/pollo_frito.jpg",
+        "image": "img/menu/pollo-frito-crujiente.jpg",
         "price": "$150.00"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Alitas",
         "description": "230g de alitas bañadas en la salsa de tu elección.",
         "category": "pollo",
-        "image": "https://example.com/images/alitas.jpg",
+        "image": "img/menu/alitas.jpg",
         "price": "$120.00"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Tiras de pollo",
         "description": "6 tiras de pollo empanizado, acompañadas de salsa bbq.",
         "category": "pollo",
-        "image": "https://example.com/images/tiras_de_pollo.jpg",
+        "image": "img/menu/tiras.avif",
         "price": "$140.00"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Pollo asado",
         "description": "Mitad de pollo asado al carbón, jugoso y con especias.",
         "category": "pollo",
-        "image": "https://example.com/images/pollo_asado.jpg",
+        "image": "img/menu/pollo-asado.jpg",
         "price": "$180.00"
     },
     {
@@ -36,7 +36,7 @@
         "name": "La Clásica Plumada",
         "description": "Hamburguesa de pechuga de pollo empanizada, con lechuga y mayonesa.",
         "category": "hamburguesas",
-        "image": "https://example.com/images/clasica_plumada.jpg",
+        "image": "img/menu/hamburguesa.avif",
         "price": "$110.00"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Fénix BBQ",
         "description": "Hamburguesa de pollo asado al carbón, bañada en salsa BBQ y acompañada de cebolla caramelizada.",
         "category": "hamburguesas",
-        "image": "https://example.com/images/fenix_bbq.jpg",
+        "image": "img/menu/hamburguesa-bbq.jpg",
         "price": "$130.00"
     },
     {
@@ -52,7 +52,7 @@
         "name": "La Spicy Wing",
         "description": "Hamburguesa de pollo crujiente con salsa búfalo, queso azul y pepinillos.",
         "category": "hamburguesas",
-        "image": "https://example.com/images/spicy_wing.jpg",
+        "image": "img/menu/hamburguesa-bufalo.jpg",
         "price": "$125.00"
     },
     {
@@ -60,7 +60,7 @@
         "name": "Doble Pollera",
         "description": "Hamburguesa con doble pollo empanizado, queso cheddar y aderezo ranch.",
         "category": "hamburguesas",
-        "image": "https://example.com/images/doble_pollera.jpg",
+        "image": "img/menu/hamburguesa-doble.avif",
         "price": "$150.00"
     },
     {
@@ -68,7 +68,7 @@
         "name": "Refresco",
         "description": "Refresco de 355 ml, variedad de sabores.",
         "category": "bebidas",
-        "image": "https://example.com/images/refresco.jpg",
+        "image": "img/menu/refrescos.jpg",
         "price": "$20.00"
     },
     {
@@ -76,7 +76,7 @@
         "name": "Jugo",
         "description": "Jugo natural de naranja o manzana, 300 ml.",
         "category": "bebidas",
-        "image": "https://example.com/images/jugo.jpg",
+        "image": "img/menu/jugos.webp",
         "price": "$25.00"
     },
     {
@@ -84,7 +84,7 @@
         "name": "Agua",
         "description": "Agua embotellada de 500 ml.",
         "category": "bebidas",
-        "image": "https://example.com/images/agua.jpg",
+        "image": "img/menu/agua.jpg",
         "price": "$15.00"
     },
     {
@@ -92,7 +92,7 @@
         "name": "Té verde",
         "description": "Pidelo para saber",
         "category": "bebidas",
-        "image": "https://example.com/images/te_verde.jpg",
+        "image": "img/menu/te.webp",
         "price": "$60.00"
     },
     {
@@ -100,7 +100,7 @@
         "name": "Ensalada",
         "description": "Ensalada mixta con lechuga, zanahoria, jitomate y aderezo.",
         "category": "complementos",
-        "image": "https://example.com/images/ensalada.jpg",
+        "image": "img/menu/ensalada.jpg",
         "price": "$50.00"
     },
     {
@@ -108,7 +108,7 @@
         "name": "Puré de papa",
         "description": "Puré de papa cremoso con mantequilla y especias.",
         "category": "complementos",
-        "image": "https://example.com/images/pure_de_papa.jpg",
+        "image": "img/menu/pure.jpg",
         "price": "$35.00"
     },
     {
@@ -116,7 +116,7 @@
         "name": "Papas fritas",
         "description": "Porción de papas fritas crujientes, acompañadas de ketchup.",
         "category": "complementos",
-        "image": "https://example.com/images/papas_fritas.jpg",
+        "image": "img/menu/papas.jpeg",
         "price": "$40.00"
     },
     {
@@ -124,7 +124,7 @@
         "name": "Aderezo",
         "description": "Aderezo ranch o de mostaza y miel.",
         "category": "complementos",
-        "image": "https://example.com/images/aderezo.jpg",
+        "image": "img/menu/aderezos.jpeg",
         "price": "$10.00"
     }
 ]
