@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import 'swiper/css';
 import Swiper from './Swiper';
-import menu from '../assets/data/menu.json';
+import menu from '../assets/data/productos.json';
 
 const Home = ({ addToCart }) => {
     const scrollToMenu = () => {
