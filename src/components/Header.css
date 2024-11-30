@@ -8,6 +8,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 100px;
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -19,16 +20,16 @@
 
 .logo {
     width: 50px;
-    /* Ajusta el tamaño del logo según sea necesario */
     height: auto;
     margin-right: 15px;
-    /* Espacio entre el logo y el texto */
 }
 
 .header ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin: 0;  /* Evita espacios no deseados */
+    padding: 0;
 }
 
 .header a {
