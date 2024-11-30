@@ -1,60 +1,40 @@
+/* Estilos generales del contenedor */
 .login-container {
-    position: relative; 
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(../assets/img/inside_pollos.jpg);
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    overflow: hidden; 
+    background-color: #f0f2f5;
 }
 
-.login-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(10px); 
-    z-index: 1; 
-}
-
+/* Estilos del formulario */
 form {
-    position: relative;
-    z-index: 2;
-    background-color: #ffffff;
-    padding: 30px 25px;
-    margin-bottom:80px;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 100%;
     max-width: 400px;
-    font-family: Arial, sans-serif;
 }
 
 /* Estilos del título */
 form h2 {
     margin-bottom: 20px;
     color: #333;
-    font-size: 26px;
-    font-weight: bold;
+    font-size: 24px;
 }
 
 /* Estilos de los inputs */
 input[type="text"],
 input[type="password"] {
     width: 100%;
-    padding: 14px;
-    margin: 12px 0;
-    border: 1px solid #ccd1d9;
-    border-radius: 8px;
-    font-size: 15px;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
 /* Estilo de enfoque en inputs */
@@ -62,40 +42,31 @@ input[type="text"]:focus,
 input[type="password"]:focus {
     border-color: #d32f2f;
     outline: none;
-    box-shadow: 0 0 8px rgba(211, 47, 47, 0.3);
+    box-shadow: 0 0 5px rgba(255, 47, 0, 0.5);
 }
 
 /* Estilos del botón */
 button {
     width: 100%;
-    padding: 14px;
-    background: linear-gradient(135deg, #d32f2f, #c62828);
+    padding: 12px;
+    background-color: #d32f2f;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
-    margin-top: 15px;
-    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
 }
 
 /* Efecto hover en botón */
 button:hover {
-    background-color: #b71c1c;
-    transform: translateY(-2px);
+    background-color: #b30000;
 }
 
-/* Efecto activo en botón */
-button:active {
-    background-color: #a00000;
-    transform: translateY(0);
-}
-
-/* Estilos de alerta */
+/* Estilos de alerta (opcional) */
 .alert {
-    color: #d32f2f;
+    color: red;
     font-size: 14px;
-    margin-top: 15px;
-    font-style: italic;
+    margin-top: 10px;
 }
