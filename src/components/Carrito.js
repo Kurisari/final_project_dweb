@@ -17,11 +17,12 @@ const Carrito = ({ cartItems, setCartItems }) => {
     // Función para disminuir la cantidad de un producto
     const decreaseQuantity = (productId) => {
         const updatedCart = cartItems.map(item => {
-            if (item.id === productId && item.quantity > 1) {
+            if (item.id === productId) {
                 return { ...item, quantity: item.quantity - 1 };
             }
             return item;
-        });
+        }).filter(item => item.quantity > 0); 
+    
         setCartItems(updatedCart);
     };
 
