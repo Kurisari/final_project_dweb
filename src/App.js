@@ -6,6 +6,7 @@ import AcercaDe from './components/AcercaDe';
 import Categorias from './components/Categorias';
 import Carrito from './components/Carrito';
 import Footer from './components/Footer';
+import './App.css';
 
 function App() {
   const [cartItems, setCartItems] = useState(0);
