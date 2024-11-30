@@ -16,14 +16,14 @@ function App() {
 
     const addToCart = (product) => {
         // Verificar si el producto ya está en el carrito
-        const existingProduct = cartItems.find(item => item.id === product.id);
-        if (existingProduct) {
-            // Si el producto ya está en el carrito, solo actualizamos la cantidad
+        const productExists = cartItems.find(item => item.id === product.id);
+        if (productExists) {
             setCartItems(cartItems.map(item =>
-                item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+                item.id === product.id
+                    ? { ...item, quantity: item.quantity + 1 }
+                    : item
             ));
         } else {
-            // Si el producto no está en el carrito, lo agregamos con cantidad 1
             setCartItems([...cartItems, { ...product, quantity: 1 }]);
         }
     };
@@ -36,7 +36,7 @@ function App() {
                     <Route path="/" element={<Home addToCart={addToCart} />} />
                     <Route path="/acerca-de" element={<AcercaDe />} />
                     <Route path="/categorias" element={<Categorias addToCart={addToCart} />} />
-                    <Route path="/carrito" element={<PrivateRoute isAuthenticated={isAuthenticated}><Carrito cartItems={cartItems} /></PrivateRoute>} />
+                    <Route path="/carrito" element={<PrivateRoute isAuthenticated={isAuthenticated}><Carrito cartItems={cartItems} setCartItems={setCartItems} /></PrivateRoute>} />
                     <Route path="/login" element={<Login setAuth={setIsAuthenticated} />} />
                 </Routes>
             </div>
