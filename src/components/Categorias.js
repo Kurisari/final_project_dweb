@@ -41,15 +41,21 @@ const Categorias = ({ addToCart }) => {
       <div className="product-list">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product-card">
-            <img src={require(`../assets/${product.image}`)} alt={product.name} className="product-image" />
-            <h3>{product.name}</h3>
-            <p>{product.description}</p>
-            <p className="product-price">{product.price}</p>
+            <img
+              src={require(`../assets/${product.image}`)}
+              alt={product.name}
+              className="product-image"
+            />
+            <div className="product-header">
+              <h3>{product.name}</h3>
+              <p className="product-price">{product.price}</p>
+            </div>
+            <p className="product-description">{product.description}</p>
             <button
-              onClick={addToCart}
+              onClick={() => addToCart(product)} 
               className="add-cart"
             >
-              Add to Cart
+              Agregar al carrito
             </button>
           </div>
         ))}

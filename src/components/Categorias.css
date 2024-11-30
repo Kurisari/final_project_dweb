@@ -5,7 +5,7 @@
 
 .categorias-header {
   position: relative;
-  height: 330px; 
+  height: 330px;
   background-image: url("https://www.culinariamexicana.com.mx/wp-content/uploads/2023/07/shardar-tarikul-islam-YPLcEMcEqaA-unsplash-1.jpg");
   background-size: cover;
   background-position: center;
@@ -16,7 +16,7 @@
   align-items: center;
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  padding-top: 20px; 
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -34,14 +34,14 @@
 }
 
 .category-select-container {
-  position: relative; 
+  position: relative;
   display: flex;
   justify-content: flex-start;
   width: 100%;
   padding: 10px 20px;
-  background-color: rgba(85, 85, 85, 0.7); 
+  background-color: rgba(85, 85, 85, 0.7);
   box-sizing: border-box;
-  margin-top: -63px; 
+  margin-top: -63px;
 }
 
 .category-select {
@@ -62,22 +62,21 @@
 
 .product-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  justify-items: center;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
   padding: 20px;
+  justify-items: center;
 }
 
 .product-card {
-  width: 90%;
-  height: 350px;
+  width: 100%;
+  max-width: 370px; 
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   background-color: #fff;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -93,33 +92,40 @@
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
+  margin-bottom: 10px; 
 }
 
-.product-card h3 {
-  font-size: 18px;
+.product-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.product-header h3 {
+  font-size: 18px; 
   font-weight: bold;
-  margin: 5px 0;
-  text-align: center;
-  height: 50px;
+  margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; 
 }
 
-.product-card p {
-  font-size: 14px;
-  margin: 5px 0 10px; 
-  text-align: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  height: 50px; 
-  line-height: 1.5;
-}
-
 .product-price {
+  font-size: 18px;
   font-weight: bold;
   color: #28a745;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #555;
   margin: 10px 0;
+  text-align: left;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .add-cart {
@@ -131,6 +137,7 @@
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
+  margin-top: auto; 
   transition: background-color 0.2s ease;
 }
 
