@@ -1,4 +1,3 @@
-// FILE: App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -12,22 +11,22 @@ import PrivateRoute from './components/PrivateRoute';
 import './App.css';
 
 function App() {
-    const [cartItems, setCartItems] = useState(0);
+    const [cartItems, setCartItems] = useState([]);
     const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-    const addToCart = () => {
-        setCartItems(cartItems + 1);
+    const addToCart = (product) => {
+        setCartItems([...cartItems, product]);
     };
 
     return (
         <Router>
-            <Header cartItems={cartItems} />
+            <Header cartItems={cartItems.length} />
             <div className="main-container">
                 <Routes>
                     <Route path="/" element={<Home addToCart={addToCart} />} />
                     <Route path="/acerca-de" element={<AcercaDe />} />
                     <Route path="/categorias" element={<Categorias addToCart={addToCart} />} />
-                    <Route path="/carrito" element={<PrivateRoute isAuthenticated={isAuthenticated}><Carrito /></PrivateRoute>} />
+                    <Route path="/carrito" element={<PrivateRoute isAuthenticated={isAuthenticated}><Carrito cartItems={cartItems} /></PrivateRoute>} />
                     <Route path="/login" element={<Login setAuth={setIsAuthenticated} />} />
                 </Routes>
             </div>

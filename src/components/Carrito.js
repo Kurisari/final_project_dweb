@@ -1,12 +1,23 @@
 import React from 'react';
-import './Carrito.css'; // Crea este archivo para estilos específicos
+import './Carrito.css';
 
-const Carrito = () => {
+const Carrito = ({ cartItems }) => {
     return (
         <div className="carrito">
             <h2>Tu Carrito de Compras</h2>
-            <p>Aquí verás los productos que has agregado al carrito.</p>
-            {/* Lógica del carrito aquí */}
+            {cartItems.length === 0 ? (
+                <p>No hay productos en el carrito.</p>
+            ) : (
+                <ul>
+                    {cartItems.map((item, index) => (
+                        <li key={index}>
+                            <h3>{item.name}</h3>
+                            <p>{item.description}</p>
+                            <p className="product-price">{item.price}</p>
+                        </li>
+                    ))}
+                </ul>
+            )}
         </div>
     );
 };
