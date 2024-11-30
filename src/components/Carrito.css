@@ -14,12 +14,6 @@
     margin-bottom: 20px;
 }
 
-.carrito p {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #666;
-}
-
 .carrito ul {
     list-style: none;
     padding: 0;
@@ -54,25 +48,16 @@
     color: #666;
 }
 
-/* Estilo para el precio */
 .carrito ul li .product-price {
     font-weight: bold;
     font-size: 1.2rem;
     color: #e74c3c;
 }
 
-.carrito ul li button {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.carrito ul li button:hover {
-    background-color: #c0392b;
+.carrito ul li .product-quantity {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
 }
 
 .carrito .total-container {
