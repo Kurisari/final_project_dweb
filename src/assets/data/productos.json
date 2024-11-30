@@ -5,7 +5,7 @@
         "description": "5 crujientes y deliciosas piezas de pollo frito.",
         "category": "pollo",
         "image": "img/menu/pollo-frito-crujiente.jpg",
-        "price": "$150.00"
+        "price": "150.00"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "description": "230g de alitas bañadas en la salsa de tu elección.",
         "category": "pollo",
         "image": "img/menu/alitas.jpg",
-        "price": "$120.00"
+        "price": "120.00"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "description": "6 tiras de pollo empanizado, acompañadas de salsa bbq.",
         "category": "pollo",
         "image": "img/menu/tiras.avif",
-        "price": "$140.00"
+        "price": "140.00"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "description": "Mitad de pollo asado al carbón, jugoso y con especias.",
         "category": "pollo",
         "image": "img/menu/pollo-asado.jpg",
-        "price": "$180.00"
+        "price": "180.00"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "description": "Hamburguesa de pechuga de pollo empanizada, con lechuga y mayonesa.",
         "category": "hamburguesas",
         "image": "img/menu/hamburguesa.avif",
-        "price": "$110.00"
+        "price": "110.00"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "description": "Hamburguesa de pollo asado al carbón, bañada en salsa BBQ y acompañada de cebolla caramelizada.",
         "category": "hamburguesas",
         "image": "img/menu/hamburguesa-bbq.jpg",
-        "price": "$130.00"
+        "price": "130.00"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "description": "Hamburguesa de pollo crujiente con salsa búfalo, queso azul y pepinillos.",
         "category": "hamburguesas",
         "image": "img/menu/hamburguesa-bufalo.jpg",
-        "price": "$125.00"
+        "price": "125.00"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "description": "Hamburguesa con doble pollo empanizado, queso cheddar y aderezo ranch.",
         "category": "hamburguesas",
         "image": "img/menu/hamburguesa-doble.avif",
-        "price": "$150.00"
+        "price": "150.00"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "description": "Refresco de 355 ml, variedad de sabores.",
         "category": "bebidas",
         "image": "img/menu/refrescos.jpg",
-        "price": "$20.00"
+        "price": "20.00"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "description": "Jugo natural de naranja o manzana, 300 ml.",
         "category": "bebidas",
         "image": "img/menu/jugos.webp",
-        "price": "$25.00"
+        "price": "25.00"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "description": "Agua embotellada de 500 ml.",
         "category": "bebidas",
         "image": "img/menu/agua.jpg",
-        "price": "$15.00"
+        "price": "15.00"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "description": "Pidelo para saber",
         "category": "bebidas",
         "image": "img/menu/te.webp",
-        "price": "$60.00"
+        "price": "60.00"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "description": "Ensalada mixta con lechuga, zanahoria, jitomate y aderezo.",
         "category": "complementos",
         "image": "img/menu/ensalada.jpg",
-        "price": "$50.00"
+        "price": "50.00"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "description": "Puré de papa cremoso con mantequilla y especias.",
         "category": "complementos",
         "image": "img/menu/pure.jpg",
-        "price": "$35.00"
+        "price": "35.00"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "description": "Porción de papas fritas crujientes, acompañadas de ketchup.",
         "category": "complementos",
         "image": "img/menu/papas.jpeg",
-        "price": "$40.00"
+        "price": "40.00"
     },
     {
         "id": 16,
@@ -125,6 +125,6 @@
         "description": "Aderezo ranch o de mostaza y miel.",
         "category": "complementos",
         "image": "img/menu/aderezos.jpeg",
-        "price": "$10.00"
+        "price": "10.00"
     }
 ]
