@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css';
+import styles from './Login.css';
 
 const Login = ({ setAuth }) => {
     const [username, setUsername] = useState('');
@@ -19,21 +19,21 @@ const Login = ({ setAuth }) => {
 
     return (
         <div className="login-container">
-            <form onSubmit={handleSubmit}>
+            <form className="login-form" onSubmit={handleSubmit}>
                 <h2>Iniciar Sesión</h2>
-                <input
+                <input className="login-input"
                     type="text"
                     placeholder="Usuario"
                     value={username}
                     onChange={(e) => setUsername(e.target.value)}
                 />
-                <input
+                <input className="login-input"
                     type="password"
                     placeholder="Contraseña"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                 />
-                <button type="submit">Ingresar</button>
+                <button className="login-button" type="submit">Ingresar</button>
             </form>
         </div>
     );
