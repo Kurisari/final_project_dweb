@@ -34,7 +34,7 @@ const SwiperComponent = ({ slides, addToCart }) => {
                         <h3>{menu.name}</h3>
                         <p>{menu.description}</p>
                         <p>{menu.price}</p>
-                        <button onClick={addToCart} className='add-cart'>Add to Cart</button>
+                        <button onClick={() => addToCart(menu)} className='add-cart'>Add to Cart</button>
                     </div>
                 </SwiperSlide>
             ))}
