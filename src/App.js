@@ -23,7 +23,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home addToCart={addToCart} />} />
             <Route path="/acerca-de" element={<AcercaDe />} />
-            <Route path="/categorias" element={<Categorias />} />
+            <Route path="/categorias" element={<Categorias addToCart={addToCart} />} />
             <Route path="/carrito" element={<Carrito />} />
           </Routes>
         </div>

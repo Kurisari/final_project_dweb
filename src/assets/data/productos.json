@@ -1,0 +1,130 @@
+[
+    {
+       "id": 1,
+       "name": "Pollo frito",
+       "description": "5 crujientes y deliciosas piezas de pollo frito.",
+       "category": "pollo",
+       "image": "https://example.com/images/pollo_frito.jpg",
+       "price": "$150.00"
+    },
+    {
+        "id": 2,
+        "name": "Alitas",
+        "description": "230g de alitas bañadas en la salsa de tu elección.",
+        "category": "pollo",
+        "image": "https://example.com/images/alitas.jpg",
+        "price": "$120.00"
+    },
+    {
+        "id": 3,
+        "name": "Tiras de pollo",
+        "description": "6 tiras de pollo empanizado, acompañadas de salsa bbq.",
+        "category": "pollo",
+        "image": "https://example.com/images/tiras_de_pollo.jpg",
+        "price": "$140.00"
+    },
+    {
+        "id": 4,
+        "name": "Pollo asado",
+        "description": "Mitad de pollo asado al carbón, jugoso y con especias.",
+        "category": "pollo",
+        "image": "https://example.com/images/pollo_asado.jpg",
+        "price": "$180.00"
+    },
+    {
+        "id": 5,
+        "name": "La Clásica Plumada",
+        "description": "Hamburguesa de pechuga de pollo empanizada, con lechuga y mayonesa.",
+        "category": "hamburguesas",
+        "image": "https://example.com/images/clasica_plumada.jpg",
+        "price": "$110.00"
+    },
+    {
+        "id": 6,
+        "name": "Fénix BBQ",
+        "description": "Hamburguesa de pollo asado al carbón, bañada en salsa BBQ y acompañada de cebolla caramelizada.",
+        "category": "hamburguesas",
+        "image": "https://example.com/images/fenix_bbq.jpg",
+        "price": "$130.00"
+    },
+    {
+        "id": 7,
+        "name": "La Spicy Wing",
+        "description": "Hamburguesa de pollo crujiente con salsa búfalo, queso azul y pepinillos.",
+        "category": "hamburguesas",
+        "image": "https://example.com/images/spicy_wing.jpg",
+        "price": "$125.00"
+    },
+    {
+        "id": 8,
+        "name": "Doble Pollera",
+        "description": "Hamburguesa con doble pollo empanizado, queso cheddar y aderezo ranch.",
+        "category": "hamburguesas",
+        "image": "https://example.com/images/doble_pollera.jpg",
+        "price": "$150.00"
+    },
+    {
+        "id": 9,
+        "name": "Refresco",
+        "description": "Refresco de 355 ml, variedad de sabores.",
+        "category": "bebidas",
+        "image": "https://example.com/images/refresco.jpg",
+        "price": "$20.00"
+    },
+    {
+        "id": 10,
+        "name": "Jugo",
+        "description": "Jugo natural de naranja o manzana, 300 ml.",
+        "category": "bebidas",
+        "image": "https://example.com/images/jugo.jpg",
+        "price": "$25.00"
+    },
+    {
+        "id": 11,
+        "name": "Agua",
+        "description": "Agua embotellada de 500 ml.",
+        "category": "bebidas",
+        "image": "https://example.com/images/agua.jpg",
+        "price": "$15.00"
+    },
+    {
+        "id": 12,
+        "name": "Té verde",
+        "description": "Pidelo para saber",
+        "category": "bebidas",
+        "image": "https://example.com/images/te_verde.jpg",
+        "price": "$60.00"
+    },
+    {
+        "id": 13,
+        "name": "Ensalada",
+        "description": "Ensalada mixta con lechuga, zanahoria, jitomate y aderezo.",
+        "category": "complementos",
+        "image": "https://example.com/images/ensalada.jpg",
+        "price": "$50.00"
+    },
+    {
+        "id": 14,
+        "name": "Puré de papa",
+        "description": "Puré de papa cremoso con mantequilla y especias.",
+        "category": "complementos",
+        "image": "https://example.com/images/pure_de_papa.jpg",
+        "price": "$35.00"
+    },
+    {
+        "id": 15,
+        "name": "Papas fritas",
+        "description": "Porción de papas fritas crujientes, acompañadas de ketchup.",
+        "category": "complementos",
+        "image": "https://example.com/images/papas_fritas.jpg",
+        "price": "$40.00"
+    },
+    {
+        "id": 16,
+        "name": "Aderezo",
+        "description": "Aderezo ranch o de mostaza y miel.",
+        "category": "complementos",
+        "image": "https://example.com/images/aderezo.jpg",
+        "price": "$10.00"
+    }
+]
