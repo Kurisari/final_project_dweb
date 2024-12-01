@@ -2,9 +2,8 @@
     text-align: center;
     padding-bottom: 20px;
     background-color: #f8f9fa;
-    /* Fondo general */
     min-height: 100vh;
-    /* Ocupa toda la pantalla */
+    overflow-x: hidden; 
 }
 
 .home-content h1 {
@@ -16,15 +15,14 @@
 
 .home-content header {
     background-image: url('../assets/img/backgroundHome.png');
-        /* Cambia la ruta a tu imagen */
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        position: relative;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home-content header::before {
