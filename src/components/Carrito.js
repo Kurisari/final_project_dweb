@@ -57,20 +57,26 @@ const Carrito = ({ cartItems, setCartItems }) => {
                         <p>No hay productos en el carrito.</p>
                     ) : (
                         <>
-                            {cartItems.map((item) => (
+                                {cartItems.map((item) => (
                                 <div key={item.id} className="carrito-item">
+                                    <img src={require(`../assets/${item.image}`)} alt={item.name} className="item-image" />
                                     <div className="item-details">
-                                        <span className="item-title">{item.title}</span>
+                                        <span className="item-title">{item.name}</span>
                                         <span className="item-price">${parseFloat(item.price).toFixed(2)}</span>
+                                    </div>
+                                    <div className="item-actions">
                                         <div className="item-quantity">
                                             <button onClick={() => decreaseQuantity(item.id)}>-</button>
                                             <span>{item.quantity}</span>
                                             <button onClick={() => increaseQuantity(item.id)}>+</button>
                                         </div>
-                                        <button onClick={() => removeItem(item.id)} className="remove-btn">Eliminar</button>
+                                        <button onClick={() => removeItem(item.id)} className="remove-btn">
+                                            Eliminar
+                                        </button>
                                     </div>
                                 </div>
                             ))}
+
                             <div className="total-container">
                                 <h3>Total: ${total}</h3>
                                 <button className="checkout-btn" onClick={handleCheckout}>Finalizar Compra</button>
