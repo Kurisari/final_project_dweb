@@ -5,6 +5,7 @@ import Home from './components/Home';
 import AcercaDe from './components/AcercaDe';
 import Categorias from './components/Categorias';
 import Carrito from './components/Carrito';
+import Admin from './components/Admin';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
@@ -37,6 +38,7 @@ function App() {
                     <Route path="/categorias" element={<Categorias addToCart={addToCart} />} />
                     <Route path="/carrito" element={<PrivateRoute isAuthenticated={isAuthenticated}><Carrito cartItems={cartItems} setCartItems={setCartItems} /></PrivateRoute>} />
                     <Route path="/login" element={<Login setAuth={setIsAuthenticated} />} />
+                    <Route path="/admin" element={<Admin />} />
                 </Routes>
             </div>
             <Footer />

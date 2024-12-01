@@ -1,0 +1,77 @@
+.admin-container {
+padding: 20px;
+}
+
+.admin-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.admin-product-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-input,
+.admin-textarea,
+.admin-button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.admin-textarea {
+    resize: vertical;
+}
+
+.admin-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-button:hover {
+    background-color: #45a049;
+}
+
+.admin-product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.admin-product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.admin-product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.admin-product-name {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.admin-product-description,
+.admin-product-category,
+.admin-product-price {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.admin-delete-button {
+    background-color: #f44336;
+}
+
+.admin-delete-button:hover {
+    background-color: #e53935;
+}
