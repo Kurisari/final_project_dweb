@@ -11,7 +11,7 @@ const Login = ({ setAuth }) => {
         e.preventDefault();
         if (username === 'user' && password === 'password') {
             setAuth(true);
-            navigate('/');
+            navigate('/carrito');
         } else {
             alert('Credenciales incorrectas');
         }
