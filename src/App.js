@@ -5,7 +5,6 @@ import Home from './components/Home';
 import AcercaDe from './components/AcercaDe';
 import Categorias from './components/Categorias';
 import Carrito from './components/Carrito';
-import Checkout from './components/Checkout';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
