@@ -7,10 +7,12 @@ import cart from '../assets/img/cart.png'
 const Header = ({ cartItems }) => {
     return (
         <header className="header">
-            <div className="logo-container">
-                <img src={logo} alt="Logo de Pollos 'El Güero'" className="logo" />
-                <h1>Pollos "El Güero"</h1>
-            </div>
+            <Link to="/" className="logo-link">
+                <div className="logo-container">
+                    <img src={logo} alt="Logo de Pollos 'El Güero'" className="logo" />
+                    <h1>Pollos "El Güero"</h1>
+                </div>
+            </Link>
             <div className="links-container">
                 <nav>
                     <ul>
