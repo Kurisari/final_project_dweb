@@ -9,7 +9,7 @@
 
 .categorias-header {
   position: relative;
-  height: 330px;
+  height: 40vh;
   background-image: url("../assets/img/pollo_categorias.jpg");
   background-size: cover;
   background-position: center;
