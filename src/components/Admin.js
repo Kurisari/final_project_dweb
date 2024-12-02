@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import "./Admin.css";
 
 const Admin = () => {
@@ -9,23 +10,26 @@ const Admin = () => {
     price: "",
     category: "",
     description: "",
-    image: null,
+    image: "", 
   });
+
+  const API_URL = "/api/productos"; 
 
   useEffect(() => {
     fetchProducts();
   }, []);
 
+  // Obtener los productos de la API
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/products");
-      const data = await response.json();
-      setProducts(data);
+      const response = await axios.get(API_URL);
+      setProducts(response.data);
     } catch (error) {
-      console.error("Error fetching products", error);
+      console.error("Error fetching products:", error);
     }
   };
 
+  // Cambio en los inputs
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setProductForm((prevForm) => ({
@@ -34,33 +38,25 @@ const Admin = () => {
     }));
   };
 
-  const handleFileChange = (e) => {
-    setProductForm((prevForm) => ({
-      ...prevForm,
-      image: e.target.files[0],
-    }));
-  };
-
+  // Enviar el formulario (crear o actualizar)
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    for (let key in productForm) {
-      formData.append(key, productForm[key]);
-    }
+
+    const productData = {
+      name: productForm.name,
+      price: productForm.price,
+      category: productForm.category,
+      description: productForm.description,
+      image: productForm.image, // URL
+    };
 
     try {
       if (productForm.id) {
-        // Actualizar
-        await fetch(`http://localhost:5000/products/${productForm.id}`, {
-          method: "PUT",
-          body: formData,
-        });
+        // Actualizar producto
+        await axios.put(`${API_URL}/${productForm.id}`, productData);
       } else {
-        // Agregar
-        await fetch("http://localhost:5000/products", {
-          method: "POST",
-          body: formData,
-        });
+        // Crear nuevo producto
+        await axios.post(API_URL, productData);
       }
       fetchProducts(); // Refrescar lista
       resetForm();
@@ -69,21 +65,26 @@ const Admin = () => {
     }
   };
 
+  // Desplazar form
   const handleEdit = (product) => {
     setProductForm(product);
+    document.getElementById('admin-form').scrollIntoView({ behavior: 'smooth' });
   };
 
+  // Eliminar producto
   const handleDelete = async (id) => {
-    try {
-      await fetch(`http://localhost:5000/products/${id}`, {
-        method: "DELETE",
-      });
-      fetchProducts(); // Refrescar lista
-    } catch (error) {
-      console.error("Error deleting product", error);
+    const confirmDelete = window.confirm("¿Estás seguro de que deseas eliminar este producto?");
+    if (confirmDelete) {
+      try {
+        await axios.delete(`${API_URL}/${id}`);
+        fetchProducts(); 
+      } catch (error) {
+        console.error("Error deleting product", error);
+      }
     }
   };
 
+  // Resetear el formulario
   const resetForm = () => {
     setProductForm({
       id: null,
@@ -91,7 +92,7 @@ const Admin = () => {
       price: "",
       category: "",
       description: "",
-      image: null,
+      image: "", 
     });
   };
 
@@ -99,7 +100,7 @@ const Admin = () => {
     <div className="admin-container">
       <h1 className="admin-title">Admin Panel</h1>
 
-      <form onSubmit={handleSubmit} className="admin-product-form">
+      <form onSubmit={handleSubmit} className="admin-product-form" id="admin-form">
         <input
           type="text"
           name="name"
@@ -136,9 +137,12 @@ const Admin = () => {
           className="admin-textarea"
         />
         <input
-          type="file"
+          type="text"
           name="image"
-          onChange={handleFileChange}
+          placeholder="URL de la imagen"
+          value={productForm.image}
+          onChange={handleInputChange}
+          required
           className="admin-input"
         />
         <button type="submit" className="admin-button">
@@ -153,28 +157,32 @@ const Admin = () => {
 
       <h2 className="admin-subtitle">Lista de productos</h2>
       <div className="admin-product-list">
-        {products.map((product) => (
-          <div key={product.id} className="admin-product-card">
-            <img
-              src={`http://localhost:5000/uploads/${product.image}`}
-              alt={product.name}
-              className="admin-product-image"
-            />
-            <h3 className="admin-product-name">{product.name}</h3>
-            <p className="admin-product-description">{product.description}</p>
-            <p className="admin-product-category">{product.category}</p>
-            <p className="admin-product-price">${product.price}</p>
-            <button onClick={() => handleEdit(product)} className="admin-button">
-              Editar
-            </button>
-            <button
-              onClick={() => handleDelete(product.id)}
-              className="admin-button admin-delete-button"
-            >
-              Borrar
-            </button>
-          </div>
-        ))}
+        {products.length === 0 ? (
+          <p>No hay productos disponibles.</p>
+        ) : (
+          products.map((product) => (
+            <div key={product.id} className="admin-product-card">
+              <img
+                src={require(`../assets/${product.image}`)}
+                alt={product.name}
+                className="admin-product-image"
+              />
+              <h3 className="admin-product-name">{product.name}</h3>
+              <p className="admin-product-description">{product.description}</p>
+              <p className="admin-product-category">{product.category}</p>
+              <p className="admin-product-price">${product.price}</p>
+              <button onClick={() => handleEdit(product)} className="admin-button">
+                Editar
+              </button>
+              <button
+                onClick={() => handleDelete(product.id)}
+                className="admin-button admin-delete-button"
+              >
+                Borrar
+              </button>
+            </div>
+          ))
+        )}
       </div>
     </div>
   );
