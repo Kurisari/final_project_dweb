@@ -103,7 +103,7 @@ const Admin = () => {
         <input
           type="text"
           name="name"
-          placeholder="Product Name"
+          placeholder="Nombre del producto"
           value={productForm.name}
           onChange={handleInputChange}
           required
@@ -112,7 +112,7 @@ const Admin = () => {
         <input
           type="number"
           name="price"
-          placeholder="Price"
+          placeholder="Precio"
           value={productForm.price}
           onChange={handleInputChange}
           required
@@ -121,7 +121,7 @@ const Admin = () => {
         <input
           type="text"
           name="category"
-          placeholder="Category"
+          placeholder="Categoría"
           value={productForm.category}
           onChange={handleInputChange}
           required
@@ -129,7 +129,7 @@ const Admin = () => {
         />
         <textarea
           name="description"
-          placeholder="Description"
+          placeholder="Descripción"
           value={productForm.description}
           onChange={handleInputChange}
           required
@@ -142,21 +142,21 @@ const Admin = () => {
           className="admin-input"
         />
         <button type="submit" className="admin-button">
-          {productForm.id ? "Update Product" : "Add Product"}
+          {productForm.id ? "Actualizar Producto" : "Agregar Producto"}
         </button>
         {productForm.id && (
           <button type="button" onClick={resetForm} className="admin-button">
-            Cancel
+            Cancelar
           </button>
         )}
       </form>
 
-      <h2 className="admin-subtitle">Product List</h2>
+      <h2 className="admin-subtitle">Lista de productos</h2>
       <div className="admin-product-list">
         {products.map((product) => (
           <div key={product.id} className="admin-product-card">
             <img
-              src={`http://localhost:5000/${product.image}`}
+              src={`http://localhost:5000/uploads/${product.image}`}
               alt={product.name}
               className="admin-product-image"
             />
@@ -165,13 +165,13 @@ const Admin = () => {
             <p className="admin-product-category">{product.category}</p>
             <p className="admin-product-price">${product.price}</p>
             <button onClick={() => handleEdit(product)} className="admin-button">
-              Edit
+              Editar
             </button>
             <button
               onClick={() => handleDelete(product.id)}
               className="admin-button admin-delete-button"
             >
-              Delete
+              Borrar
             </button>
           </div>
         ))}
