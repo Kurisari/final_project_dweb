@@ -5,6 +5,7 @@ import "./Categorias.css";
 const Categorias = ({ addToCart }) => {
     const [products, setProducts] = useState([]);
     const [selectedCategory, setSelectedCategory] = useState("todos");
+    const [addedProductId, setAddedProductId] = useState(null);
 
     useEffect(() => {
         axios.get('/api/productos')
@@ -18,6 +19,14 @@ const Categorias = ({ addToCart }) => {
 
     const handleCategoryChange = (event) => {
         setSelectedCategory(event.target.value);
+    };
+
+    const handleAddToCart = (product) => {
+        addToCart(product);
+        setAddedProductId(product.id);
+        setTimeout(() => {
+            setAddedProductId(null);
+        }, 1000);
     };
 
     const filteredProducts =
@@ -59,10 +68,10 @@ const Categorias = ({ addToCart }) => {
                         </div>
                         <p className="product-description">{product.description}</p>
                         <button
-                            onClick={() => addToCart(product)}
-                            className="add-cart"
+                            onClick={() => handleAddToCart(product)}
+                            className={`add-cart ${addedProductId === product.id ? 'added' : ''}`}
                         >
-                            Agregar al carrito
+                            {addedProductId === product.id ? 'Agregado' : 'Agregar al carrito'}
                         </button>
                     </div>
                 ))}
