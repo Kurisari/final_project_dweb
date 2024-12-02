@@ -1,9 +1,20 @@
-import React, { useState } from "react";
-import products from "../assets/data/productos.json";
+import React, { useState, useEffect } from "react";
+import axios from 'axios';
 import "./Categorias.css";
 
 const Categorias = ({ addToCart }) => {
+  const [products, setProducts] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("todos");
+
+  useEffect(() => {
+    axios.get('/api/productos')
+        .then(response => {
+            setProducts(response.data);
+        })
+        .catch(error => {
+            console.error('Error fetching the menu:', error);
+        });
+}, []);
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);
@@ -16,13 +27,11 @@ const Categorias = ({ addToCart }) => {
 
   return (
     <div className="categorias">
-      {/* Encabezado con fondo de imagen */}
       <div className="categorias-header">
         <h2>Categorías de Productos</h2>
         <p>Encuentra deliciosas opciones para satisfacer tus antojos.</p>
       </div>
 
-      {/* Barra con selector de categorías */}
       <div className="category-select-container">
         <select
           className="category-select"
@@ -37,13 +46,11 @@ const Categorias = ({ addToCart }) => {
         </select>
       </div>
 
-      {/* Lista de productos */}
       <div className="product-list">
         {filteredProducts.map((product) => (
           <div key={product.id} className="product-card">
             <img
-              src={require(`../assets/${product.image}`)}
-              alt={product.name}
+              src={require(`../assets/${product.image}`)} alt={product.title}
               className="product-image"
             />
             <div className="product-header">

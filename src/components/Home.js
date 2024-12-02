@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Home.css';
 import 'swiper/css';
 import Swiper from './Swiper';
-import menu from '../assets/data/productos.json';
+import axios from 'axios';
 
 const Home = ({ addToCart }) => {
+    const [menu, setMenu] = useState([]);
+
+    useEffect(() => {
+        axios.get('/api/productos')
+            .then(response => {
+                setMenu(response.data);
+            })
+            .catch(error => {
+                console.error('Error fetching the menu:', error);
+            });
+    }, []);
+
     const scrollToMenu = () => {
         document.querySelector('.menu-title').scrollIntoView({ behavior: 'smooth' });
     };
