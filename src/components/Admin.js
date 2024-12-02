@@ -14,6 +14,7 @@ const Admin = () => {
   });
 
   const API_URL = "/api/productos"; 
+  const IMAGE_PATH = "img/menu/"; // Ruta base para las imágenes
 
   useEffect(() => {
     fetchProducts();
@@ -47,7 +48,7 @@ const Admin = () => {
       price: productForm.price,
       category: productForm.category,
       description: productForm.description,
-      image: productForm.image, // URL
+      image: `${IMAGE_PATH}${productForm.image}`, // Concatenar ruta base
     };
 
     try {
@@ -67,8 +68,11 @@ const Admin = () => {
 
   // Desplazar form
   const handleEdit = (product) => {
-    setProductForm(product);
-    document.getElementById('admin-form').scrollIntoView({ behavior: 'smooth' });
+    setProductForm({
+      ...product,
+      image: product.image.replace(IMAGE_PATH, ""), // Remover la ruta base al editar
+    });
+    document.getElementById("admin-form").scrollIntoView({ behavior: "smooth" });
   };
 
   // Eliminar producto
@@ -77,7 +81,7 @@ const Admin = () => {
     if (confirmDelete) {
       try {
         await axios.delete(`${API_URL}/${id}`);
-        fetchProducts(); 
+        fetchProducts();
       } catch (error) {
         console.error("Error deleting product", error);
       }
@@ -92,7 +96,7 @@ const Admin = () => {
       price: "",
       category: "",
       description: "",
-      image: "", 
+      image: "",
     });
   };
 
@@ -139,7 +143,7 @@ const Admin = () => {
         <input
           type="text"
           name="image"
-          placeholder="URL de la imagen"
+          placeholder="Nombre del archivo de imagen"
           value={productForm.image}
           onChange={handleInputChange}
           required
