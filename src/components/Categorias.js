@@ -26,7 +26,7 @@ const Categorias = ({ addToCart }) => {
         setAddedProductId(product.id);
         setTimeout(() => {
             setAddedProductId(null);
-        }, 1000);
+        }, 500);
     };
 
     const filteredProducts =
