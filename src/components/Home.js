@@ -34,7 +34,7 @@ const Home = ({ addToCart }) => {
             {menu.length >= 8 ? (
                     <Swiper slides={menu} addToCart={addToCart} />
                 ) : (
-                    <p>Cargando...</p>
+                    <h6 class="home-loading">Cargando...</h6>
                 )}
         </div>
     );

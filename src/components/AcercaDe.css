@@ -1,5 +1,9 @@
+body, html {
+    overflow-x: hidden;
+}
+
 .acerca-de-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     border-radius: 15px;
     text-align: center;

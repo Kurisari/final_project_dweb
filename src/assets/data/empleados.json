@@ -159,5 +159,12 @@
         "puesto": "Analista Financiero",
         "email": "raul.navarro@polloselguero.com",
         "foto": "img/empleados/23.jpeg"
+    },
+    {
+        "id": 24,
+        "nombre": "Jesús Olvera",
+        "puesto": "Chef",
+        "email": "jesus.olvera@polloselguero.com",
+        "foto": "img/empleados/24.jpeg"
     }
 ]

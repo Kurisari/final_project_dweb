@@ -1,17 +1,22 @@
-import { Navigation, Pagination, A11y, Autoplay} from 'swiper/modules';
-// Import Swiper React components
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import "swiper/css/autoplay";
-
 import './Swiper.css';
+import { useState } from 'react';
 
 const SwiperComponent = ({ slides, addToCart }) => {
+    const [addedProductId, setAddedProductId] = useState(null);
+
+    const handleAddToCart = (product) => {
+        addToCart(product); 
+        setAddedProductId(product.id); 
+        setTimeout(() => setAddedProductId(null), 500); 
+    };
+
     return (
         <Swiper
             modules={[Navigation, Pagination, A11y, Autoplay]}
@@ -21,20 +26,25 @@ const SwiperComponent = ({ slides, addToCart }) => {
             autoplay={{
                 delay: 3000,
                 pauseOnMouseEnter: true,
-                disableOnInteraction: false
+                disableOnInteraction: false,
             }}
             loop
             navigation
             pagination={{ clickable: true }}
         >
-            {slides.map((menu) =>(
-                <SwiperSlide>
+            {slides.map((menu) => (
+                <SwiperSlide key={menu.id}>
                     <div className="slide">
                         <img src={require(`../assets/${menu.image}`)} alt={menu.title} />
                         <h3>{menu.name}</h3>
                         <p>{menu.description}</p>
                         <p>${menu.price}</p>
-                        <button onClick={() => addToCart(menu)} className='add-cart'>Add to Cart</button>
+                        <button
+                            onClick={() => handleAddToCart(menu)}
+                            className={`swiper-add-cart ${addedProductId === menu.id ? 'swiper-added' : ''}`}
+                        >
+                            {addedProductId === menu.id ? 'Agregado' : 'Agregar al carrito'}
+                        </button>
                     </div>
                 </SwiperSlide>
             ))}

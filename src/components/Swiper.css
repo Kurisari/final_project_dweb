@@ -4,8 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible;
-    padding-top: 20px;
+    overflow: visible; 
 }
 
 .swiper-slide {
@@ -20,6 +19,7 @@
     padding: 20px;
     text-align: center;
     overflow: visible;
+    margin-bottom:30px;
 }
 
 .slide {
@@ -56,7 +56,7 @@
     color: #d32f2f;
 }
 
-.add-cart {
+.swiper-add-cart {
     background-color: #d32f2f;
     color: white;
     border: none;
@@ -65,4 +65,11 @@
     font-size: 1rem;
     border-radius: 5px;
     margin-top: 20px;
+    width:100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.swiper-add-cart.swiper-added {
+    background-color: #4caf50; 
+    color: white;
 }
