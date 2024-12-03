@@ -29,9 +29,11 @@ function App() {
         }
     };
 
+    const totalItemsInCart = cartItems.reduce((total, item) => total + item.quantity, 0);
+
     return (
         <Router>
-            <Header cartItems={cartItems.length} />
+            <Header cartItems={totalItemsInCart} />
             <div className="main-container">
                 <Routes>
                     <Route path="/" element={<Home addToCart={addToCart} />} />
