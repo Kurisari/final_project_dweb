@@ -6,6 +6,7 @@ import AcercaDe from './components/AcercaDe';
 import Categorias from './components/Categorias';
 import Carrito from './components/Carrito';
 import Admin from './components/Admin';
+import ApiLoca from './components/ApiLoca';
 import Footer from './components/Footer';
 import Login from './components/Login';
 import PrivateRoute from './components/PrivateRoute';
@@ -39,6 +40,7 @@ function App() {
                     <Route path="/carrito" element={<PrivateRoute isAuthenticated={isAuthenticated}><Carrito cartItems={cartItems} setCartItems={setCartItems} /></PrivateRoute>} />
                     <Route path="/login" element={<Login setAuth={setIsAuthenticated} />} />
                     <Route path="/admin" element={<Admin />} />
+                    <Route path="/apiloca" element={<ApiLoca />} />
                 </Routes>
             </div>
             <Footer />
