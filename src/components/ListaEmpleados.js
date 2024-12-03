@@ -8,7 +8,7 @@ function ListaEmpleados({ empleados }) {
             {empleados.map((empleado) => (
                 <div key={empleado.id} className="empleado-card">
                     <img
-                        src={empleado.foto}
+                        src={require(`../assets/${empleado.foto}`)}
                         alt={`Foto de ${empleado.nombre}`}
                         className="empleado-foto"
                     />

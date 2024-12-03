@@ -17,6 +17,7 @@
     width: 250px;
     text-align: center;
     transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
 }
 
 .empleado-card:hover {
@@ -33,21 +34,28 @@
 }
 
 .empleado-nombre {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 10px 0;
     color: #333;
+    white-space: nowrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .empleado-puesto {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #555;
     margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .empleado-email {
-    font-size: 1em;
+    font-size: 0.9em;
     color: #b32217;
     text-decoration: none;
+    word-break: break-word;
 }
 
 .empleado-email:hover {
