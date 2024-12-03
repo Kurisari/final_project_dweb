@@ -6,17 +6,16 @@ import axios from 'axios';
 
 const Home = ({ addToCart }) => {
     const [menu, setMenu] = useState([]);
-    const apiUrl = process.env.REACT_APP_API_URL || '/api';
 
     useEffect(() => {
-        axios.get(`${apiUrl}/productos`)
+        axios.get('/api/productos')
             .then(response => {
                 setMenu(response.data);
             })
             .catch(error => {
                 console.error('Error fetching the menu:', error);
             });
-    }, [apiUrl]);
+    }, []);
 
     const scrollToMenu = () => {
         document.querySelector('.menu-title').scrollIntoView({ behavior: 'smooth' });
@@ -35,10 +34,8 @@ const Home = ({ addToCart }) => {
             {menu.length >= 8 ? (
                     <Swiper slides={menu} addToCart={addToCart} />
                 ) : (
-                    <h6 className="home-loading">Cargando...</h6>
+                    <h6 class="home-loading">Cargando...</h6>
                 )}
         </div>
     );
 };
-
-export default Home;
