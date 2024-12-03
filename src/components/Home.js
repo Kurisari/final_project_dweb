@@ -31,7 +31,11 @@ const Home = ({ addToCart }) => {
                 </div>
             </header>
             <h3 className='menu-title'>Nuestro Menú</h3>
-            <Swiper slides={menu} addToCart={addToCart}/>
+            {menu.length >= 8 ? (
+                    <Swiper slides={menu} addToCart={addToCart} />
+                ) : (
+                    <p>Cargando...</p>
+                )}
         </div>
     );
 };
