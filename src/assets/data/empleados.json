@@ -4,160 +4,160 @@
         "nombre": "Juan Pérez",
         "puesto": "Gerente de Ventas",
         "email": "juan.perez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/1.jpeg"
     },
     {
         "id": 2,
         "nombre": "Ana López",
         "puesto": "Desarrolladora Frontend",
         "email": "ana.lopez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/2.jpeg"
     },
     {
         "id": 3,
         "nombre": "Carlos Sánchez",
         "puesto": "Diseñador UX/UI",
         "email": "carlos.sanchez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/3.jpeg"
     },
     {
         "id": 4,
         "nombre": "María González",
         "puesto": "Analista de Datos",
         "email": "maria.gonzalez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/4.jpeg"
     },
     {
         "id": 5,
         "nombre": "Luis Ramírez",
         "puesto": "Gerente de Proyectos",
         "email": "luis.ramirez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/5.jpeg"
     },
     {
         "id": 6,
         "nombre": "Sofía Martínez",
         "puesto": "Especialista en Recursos Humanos",
         "email": "sofia.martinez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/6.jpeg"
     },
     {
         "id": 7,
         "nombre": "Pedro Fernández",
         "puesto": "Contador",
         "email": "pedro.fernandez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/7.jpeg"
     },
     {
         "id": 8,
         "nombre": "Laura Torres",
         "puesto": "Desarrolladora Backend",
         "email": "laura.torres@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/8.jpeg"
     },
     {
         "id": 9,
         "nombre": "David Ruiz",
         "puesto": "Administrador de Sistemas",
         "email": "david.ruiz@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/9.jpeg"
     },
     {
         "id": 10,
         "nombre": "Lucía Morales",
         "puesto": "Ingeniera de Software",
         "email": "lucia.morales@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/10.jpeg"
     },
     {
         "id": 11,
         "nombre": "Jorge Herrera",
         "puesto": "Soporte Técnico",
         "email": "jorge.herrera@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/11.jpeg"
     },
     {
         "id": 12,
         "nombre": "Patricia Castro",
         "puesto": "Consultora de Negocios",
         "email": "patricia.castro@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/12.jpeg"
     },
     {
         "id": 13,
         "nombre": "Roberto Gómez",
         "puesto": "Especialista en Marketing Digital",
         "email": "roberto.gomez@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/13.jpeg"
     },
     {
         "id": 14,
         "nombre": "Elena Vargas",
         "puesto": "Diseñadora Gráfica",
         "email": "elena.vargas@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/14.jpeg"
     },
     {
         "id": 15,
         "nombre": "Alberto Díaz",
         "puesto": "Desarrollador Full Stack",
         "email": "alberto.diaz@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/15.jpeg"
     },
     {
         "id": 16,
         "nombre": "Gabriela Rojas",
         "puesto": "Investigadora de Mercado",
         "email": "gabriela.rojas@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/16.jpeg"
     },
     {
         "id": 17,
         "nombre": "Hugo Reyes",
         "puesto": "Arquitecto de Software",
         "email": "hugo.reyes@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/17.jpeg"
     },
     {
         "id": 18,
         "nombre": "Mónica Silva",
         "puesto": "Directora de Operaciones",
         "email": "monica.silva@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/18.jpeg"
     },
     {
         "id": 19,
         "nombre": "Eduardo Flores",
         "puesto": "Consultor de IT",
         "email": "eduardo.flores@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/19.jpeg"
     },
     {
         "id": 20,
         "nombre": "Carolina Ortega",
         "puesto": "Especialista en SEO",
         "email": "carolina.ortega@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/20.jpeg"
     },
     {
         "id": 21,
         "nombre": "Martín Castillo",
         "puesto": "Gerente de Producción",
         "email": "martin.castillo@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/21.jpeg"
     },
     {
         "id": 22,
         "nombre": "Isabel Soto",
         "puesto": "Coordinadora de Ventas",
         "email": "isabel.soto@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/22.jpeg"
     },
     {
         "id": 23,
         "nombre": "Raúl Navarro",
         "puesto": "Analista Financiero",
         "email": "raul.navarro@polloselguero.com",
-        "foto": "https://via.placeholder.com/150"
+        "foto": "img/empleados/23.jpeg"
     }
 ]
