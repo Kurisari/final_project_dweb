@@ -39,3 +39,5 @@ const Home = ({ addToCart }) => {
         </div>
     );
 };
+
+export default Home;
