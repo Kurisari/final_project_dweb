@@ -1,6 +1,6 @@
 # Pollos "El Güero"
 
-Este es el repositorio del proyecto Pollos "El Güero", una aplicación web para la gestión de un restaurante de pollos rostizados.
+Este es el repositorio del proyecto Pollos "El Güero", una aplicación web para la gestión de un restaurante de pollo frito.
 
 ## Requisitos
 
@@ -12,7 +12,7 @@ Este es el repositorio del proyecto Pollos "El Güero", una aplicación web para
 1. Clona el repositorio:
 
     ```sh
-    git clone https://github.com/tu-usuario/pollos-el-guero.git
+    git clone https://github.com/Kurisari/final_project_dweb.git
     cd pollos-el-guero
     ```
 
@@ -53,10 +53,17 @@ Esto creará una carpeta build con los archivos optimizados para producción.
     - `Categorias.js`: Componente de las categorías de productos.
     - `Carrito.js`: Componente del carrito de compras.
     - `Admin.js`: Componente del panel de administración.
-    - `ApiLoca.js`: Componente que muestra datos y trivia aleatoria.
+    - `ApiLoca.js`: Componente que muestra datos, trivia aleatoria e imagenes de gatos.
   - `assets/`: Contiene los recursos estáticos como imágenes y datos.
   - `App.js`: Componente principal de la aplicación.
   - `index.js`: Punto de entrada de la aplicación.
+
+## Acceso a Páginas Específicas
+
+Para acceder a las páginas de administración y ApiLoca, es necesario escribir las siguientes direcciones directamente en la barra de direcciones del navegador:
+
+- **Página de Administración**: `http://localhost:3000/admin`
+- **Página ApiLoca**: `http://localhost:3000/apiloca`
 
 ## Funcionalidades
 
@@ -64,7 +71,7 @@ Esto creará una carpeta build con los archivos optimizados para producción.
 - Categorías: Filtra productos por categorías.
 - Carrito de Compras: Permite agregar y eliminar productos del carrito.
 - Panel de Administración: Permite gestionar productos (crear, editar, eliminar).
-- Trivia y Datos Aleatorios: Muestra datos y trivia aleatoria usando APIs externas.
+- Api Loca: Muestra datos, imágenes de gatos y una trivia aleatoria usando APIs externas.
 
 ## Configuración de Proxy
 
@@ -87,6 +94,12 @@ module.exports = function(app) {
 };
 ```
 
+## Nota sobre la API de Productos
+
+La API utilizada para gestionar los productos puede cerrarse después de un tiempo de inactividad. Para asegurarte de que los productos se muestren correctamente, abre el siguiente enlace antes de usar la aplicación:
+
+[https://api-productos-lkpz.onrender.com/productos](https://api-productos-lkpz.onrender.com/productos)
+
 ## Pruebas
 
 Para ejecutar las pruebas, usa:
@@ -94,3 +107,8 @@ Para ejecutar las pruebas, usa:
 ```sh
 npm test
 ```
+
+## Autores
+
+- [@Kurisari](https://github.com/Kurisari)
+- [@LuisDA39](https://github.com/LuisDA39)
